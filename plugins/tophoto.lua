@@ -30,7 +30,7 @@ end
 end
 return {
   patterns = {
- "^[!/](photo)$",
+ "^[!/+](photo)$",
  "^([Pp]hoto)$"
   },
   run = run
