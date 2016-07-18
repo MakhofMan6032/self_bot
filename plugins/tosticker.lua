@@ -23,14 +23,14 @@ local function run(msg,matches)
     
       if matches[1]:lower() == "sticker" and is_sudo(msg) then
      redis:get("photo:sticker")  
-    send_large_msg(receiver, 'By @BeyondTeam :)', ok_cb, false)
+    send_large_msg(receiver, 'By @Electrovirus シ', ok_cb, false)
         load_photo(msg.reply_id, tosticker, msg)
     end
 end
 end
 return {
   patterns = {
- "^[!/](sticker)$",
+ "^[!/+](sticker)$",
  "^([Ss]ticker)$"
   },
   run = run
