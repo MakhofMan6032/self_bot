@@ -32,8 +32,8 @@ NONVOLUNTARYCHECK=0
 VOLUNTARY=1
 VOLUNTARYCHECK=0
 I=1
-BOT=Self-Bot  # You can put here other bots. Also you can change it to run more than one bot in the same server.
-RELOADTIME=10  # Time between checking cpu calls of the cli process. Set the value high if your bot does not receive lots of messages.
+BOT=selfBot  # You can put here other bots. Also you can change it to run more than one bot in the same server.
+RELOADTIME=2  # Time between checking cpu calls of the cli process. Set the value high if your bot does not receive lots of messages.
 
 
 function tmux_mode {
