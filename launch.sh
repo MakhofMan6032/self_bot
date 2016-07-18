@@ -116,5 +116,3 @@ else
    sleep 3
   done
 fi
-
---By Ev
