@@ -25,13 +25,13 @@ load_document(msg.reply_id, savefile, {msg=msg,name=name,adress=adress})
       end
       
          if not is_sudo(msg) then
-           return "You Are Not Solid :/"
+           return "You Are Not Sudo ❎"
          end
 end
 end
 return {
   patterns = {
- "^[!/#]([Ff]ile) (.*) (.*)$",
+ "^[+]([Ff]ile) (.*) (.*)$",
   },
   run = run,
 }
