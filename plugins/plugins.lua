@@ -22,18 +22,18 @@ local function plugin_exists( name )
 end
 
 local function list_all_plugins(only_enabled)
-  local tmp = '\n\n@BeyondTeam'
+  local tmp = '\n\n@Electrovirus'
   local text = ''
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
     --  ✔ enabled, ❌ disabled
-    local status = '/Disable➣'
+    local status = '〔Disable〕⇒'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '/Enable➣' 
+        status = '〔Enable〕⇒' 
       end
       nact = nact+1
     end
@@ -52,13 +52,13 @@ local function list_plugins(only_enabled)
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
     --  ✔ enabled, ❌ disabled
-    local status = '/Disable➣'
+    local status = '〔Disable〕⇒'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '/Enable➣' 
+        status = '〔Enable〕⇒' 
       end
       nact = nact+1
     end
@@ -68,9 +68,9 @@ local function list_plugins(only_enabled)
      -- text = text..v..'  '..status..'\n'
     end
   end
-  local text = text.."\nAll Plugins Reloaded\n\n"..nact.." Plugins Enabled\n"..nsum.." Plugins Installed\n\n@BeyondTeam"
+  local text = text.."\nAll Plugins Reloaded\n\n"..nact.." Plugins Enabled\n"..nsum.." Plugins Installed\n\n@Electrovirus"
 return text
-end
+endp
 
 local function reload_plugins( )
   plugins = {}
