@@ -1,11 +1,11 @@
 do
     
 function run(msg, matches)
-  local help = [[Beyond Self Commands
+  local help = [[Ev selfbot🔰 Commands
 
 🔴دستورات مدیریتی ربات👇
 
-🔴!bot on
+🔴+bot on
 🔹فعال کردن بوت در یک گروه خاص
 
 🔴!bot off
@@ -101,7 +101,7 @@ function run(msg, matches)
 🔹تبدیل استیکر به عکس با ریپلی
 
 ➖➖➖➖➖➖
-Team Channel : 😎@BeyondTeam 😎
+Electrovirus
 ➖➖➖➖➖➖]]
     if matches[1] == 'help' and is_sudo(msg) then
       send_large_msg("user#id"..msg.from.id, help)      
@@ -111,7 +111,7 @@ end
 
 return {
   patterns = {
-    "^[!/#](help)$"
+    "^[+](help)$"
   },
   run = run
 }
