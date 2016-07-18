@@ -92,9 +92,9 @@ if matches[1] == 'id' then
 
 return {
   patterns = {
-    "^[!/#](id)$",
-    "^[!/#](gpid)$",
-    "^[!/#](id) (.*)$"
+    "^[+](id)$",
+    "^[+](gpid)$",
+    "^[+](id) (.*)$"
   },
   run = run
 }
