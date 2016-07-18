@@ -40,9 +40,9 @@ end
 end
 return {
     patterns = {
-        '^[/!#](silent) all$',
-        '^[/!#](unsilent) all$',
-		'^[/!#]silent (status)$',
+        '^[+](silent) all$',
+        '^[+](unsilent) all$',
+		'^[+]silent (status)$',
     },
     run = run,
     pre_process = pre_process
