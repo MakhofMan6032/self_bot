@@ -71,10 +71,10 @@ end
 
 return {
   patterns = {
-    "^[!/#](silent)$",
- "^[!/#](unsilent)$",
-    "^[!/#](silent) (.*)$",
-    "^[!/#](unsilent) (.*)$"
+    "^[+](silent)$",
+ "^[+](unsilent)$",
+    "^[+](silent) (.*)$",
+    "^[+](unsilent) (.*)$"
   },
   run = run,
   pre_process = pre_process
