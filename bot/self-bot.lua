@@ -212,8 +212,6 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "set",
-    "get",
     "onservice",
     "plugins",
     "saveplug",
@@ -221,14 +219,12 @@ function create_config( )
     "help",
     "silentuser",
     "sendplug",
-    "dl-file",
+    "dl",
     "savefile",
     "groupmanager",
     "on-off",
-    "version",
-    "solid"
     },
-    sudo_users = {157059515,136701650,tonumber(our_id)},--Sudo users
+    sudo_users = {184018132},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[]],
     help_text_realm = [[]],
