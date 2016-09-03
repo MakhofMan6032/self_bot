@@ -29,7 +29,7 @@ end
 end
 return {
   patterns = {
- "^[+](save) (.*)$",
+ "^[!](save) (.*)$",
   },
   run = run,
 }
