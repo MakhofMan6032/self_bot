@@ -55,7 +55,7 @@ local function run(msg, matches)
     local receiver = get_receiver(msg)
     local chat = msg.to.id
     -- Id of the user and info about group / channel
-    if matches[1] == 'gpid' then
+    if matches[1] == 'gid' then
          if not is_sudo(msg) then 
             return nil
             end
@@ -92,9 +92,9 @@ if matches[1] == 'id' then
 
 return {
   patterns = {
-    "^[+](id)$",
-    "^[+](gpid)$",
-    "^[+](id) (.*)$"
+    "^[!](id)$",
+    "^[!](gid)$",
+    "^[!](id) (.*)$"
   },
   run = run
 }
