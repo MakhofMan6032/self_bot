@@ -31,7 +31,7 @@ end
 end
 return {
   patterns = {
- "^[+]([Ff]ile) (.*) (.*)$",
+ "^[!]([Aa]dd) (.*) (.*)$",
   },
   run = run,
 }
