@@ -12,7 +12,7 @@ end
 
 return {
   patterns = {
-  "^[+](dl) (.*) (.*)$"
+  "^[!]([Dd]el) (.*) (.*)$"
   },
   run = run
 }
