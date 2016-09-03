@@ -84,7 +84,7 @@ end
 
 return {
   patterns = {
-    "^[+](help)$"
+    "^[!](help)$"
   },
   run = run
 }
