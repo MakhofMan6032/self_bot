@@ -1,4 +1,4 @@
-# Electrovirus self bot
+# Silver self bot
 
 **An Fun bot based on Griffin.
 
@@ -14,8 +14,8 @@
 ```
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev
 cd $HOME
-git clone https://github.com/BeyondTeam/Self-Bot.git -b supergroups
-cd Self-Bot
+git clone https://github.com/MakhofMan6032/Self_Bot.git -b supergroups
+cd Self_Bot
 chmod +x launch.sh
 ./launch.sh install
 cd .luarocks/bin
@@ -37,7 +37,6 @@ Then Enter Your Phone And Confirmation Code
 ###Open ./data/config.lua and add your ID to the "sudo_users" section in the following format:
 ```
   sudo_users = {
-    157059515,
     YourID
   }
 ```
