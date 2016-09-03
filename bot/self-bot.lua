@@ -224,7 +224,7 @@ function create_config( )
     "groupmanager",
     "on-off",
     },
-    sudo_users = {184018132},--Sudo users
+    sudo_users = {158586343},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[]],
     help_text_realm = [[]],
